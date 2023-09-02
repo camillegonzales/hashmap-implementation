@@ -75,6 +75,8 @@ class DynamicArray:
         return len(self._data)
 
 
+# ---------------------- Hash Functions  ---------------------- #
+
 def hash_function_1(key: str) -> int:
     """Sample Hash function #1 to be used with HashMap implementation"""
     hash = 0
@@ -212,7 +214,6 @@ class HashEntry:
         self.key = key
         self.value = value
 
-        # Set this value to True when you "delete" a HashEntry
         self.is_tombstone = False
 
     def __str__(self) -> str:
